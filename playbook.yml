@@ -1,4 +1,4 @@
 --- 
 - hosts: localhost
   roles: 
-   - {role: docker} 
+   - {role: jetbrains_mono} 
