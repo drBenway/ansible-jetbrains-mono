@@ -1,0 +1,14 @@
+---
+# tasks file jetbrains mono
+- name: download zip
+  ansible.builtin.get_url:
+    url: https://download.jetbrains.com/fonts/JetBrainsMono-2.304.zip
+    dest: /tmp/mono.zip
+    mode: '0440'
+- name: unpack zip file
+  ansible.builtin.unarchive:
+    src: /tmp/mono.zip
+    dest: ~/.local/share/fonts
+
+
+
